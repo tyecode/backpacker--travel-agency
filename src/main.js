@@ -1,35 +1,9 @@
 import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
 
-const navbar = document.querySelector('.navbar')
-const returnTopBtn = document.querySelector('.return-top-btn')
+window.onload = function() {
+    const navbar = document.querySelector('.navbar')
+    const returnTopBtn = document.querySelector('.return-top-btn')
 
-function carousel() {
-    var swiper = new Swiper(".mySwiper", {
-        speed: 800,
-        spaceBetween: 220,
-        slidesPerView: 'auto',
-        loop: true,
-        loopedSlides: 5,
-        centeredSlides: true,       
-        watchSlidesProgress: false,
-        watchOverflow: true,
-        watchSlidesProgress: true,
-        
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        observer: true,  
-        observeParents: true,
-        longSwipes: true,
-        longSwipesMs: 200,
-    })
-}
-
-//#################################################################################//
-
-window.addEventListener('load', () => {
     // Navbar Animated
 
     window.addEventListener('scroll', () => {
@@ -55,4 +29,28 @@ window.addEventListener('load', () => {
     })
 
     carousel();
-})
+}
+
+function carousel() {
+    var swiper = new Swiper(".mySwiper", {
+        speed: 800,
+        spaceBetween: 220,
+        slidesPerView: 'auto',
+        loop: true,
+        loopedSlides: 5,
+        centeredSlides: true,       
+        watchSlidesProgress: false,
+        watchOverflow: true,
+        watchSlidesProgress: true,
+        
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        observer: true,  
+        observeParents: true,
+        longSwipes: true,
+        longSwipesMs: 200,
+    })
+}
