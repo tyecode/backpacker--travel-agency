@@ -1,0 +1,66 @@
+.display-1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 1rem 0;
+    letter-spacing: 0;
+}
+
+.display-2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14;
+    text-transform: capitalize;
+    margin: 2rem .3rem;
+}
+
+.content-header {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: $secondary;
+    margin: 2.5rem 0;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.content-info {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 0;
+    margin: 2rem 0;
+    line-height: 1.8;
+}
+
+.content-link {
+    display: block;
+
+    a {
+        color: $secondary;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 1rem 0;
+    }
+}
+
+.swiper-slide {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+
+    h3 {
+        font-family: inherit;
+        font-size: 40px;
+        font-weight: 400;
+        color: $secondary;
+        margin: 2rem 0;
+    }
+
+    p {
+        font-family: inherit;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+}

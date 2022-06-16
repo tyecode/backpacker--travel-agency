@@ -1,0 +1,57 @@
+.home {
+    width: 100%;
+    height: 100vh;
+
+    .home-hero {
+        width: 100%;
+        height:  100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    
+        &--video {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+
+            @media (min-aspect-ratio: 16/9) {
+                width: 100%;
+                height: auto;
+            }
+              
+            @media (max-aspect-ratio: 16/9) {
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        &--overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $overlay;
+        }
+
+        &--content {
+            position: relative;
+            display: block;
+            width: 800px;
+            
+            .display-1 {
+                display: block;
+                color: $white;
+            }
+
+            .display-2 {
+                display: block;
+                color: $white;
+                font-size: 30px;
+                font-weight: 200;
+            }
+        }
+    }
+
+}

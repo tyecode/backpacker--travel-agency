@@ -1,0 +1,72 @@
+.hero-btn {
+    display: block;
+    position: relative;
+
+    .btn:hover {
+
+        .btn-circle {
+            animation: btn-up-down .5s alternate infinite;
+        }
+    }
+    
+    @keyframes btn-up-down {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-6px);
+        }
+    }
+}
+
+.nav-list {
+    
+    li {
+        width: fit-content;
+        position: relative;
+        padding: .1rem 0;
+
+        a::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: .1rem;
+            background-color: $secondary;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform .3s ease-in-out;
+        }
+    
+        a:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    }
+}
+
+.content-link {
+    width: fit-content;
+    position: relative;
+
+    a::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: .1rem;
+        background-color: $secondary;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: transform .5s ease-in-out;
+    }
+
+    a:hover::after {
+        transform: scaleX(0);
+        transform-origin: right;
+    }   
+}

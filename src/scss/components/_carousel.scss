@@ -1,0 +1,96 @@
+.why-choose-us {
+    margin: 0 !important;
+
+    .swiper {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: $background-2;
+        padding: 3rem 0 8rem 0;
+        overflow: visible;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+        .content-header {
+            margin-bottom: 4rem;
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            align-items: center;
+            width: 900px;
+        }
+        
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background: $white;
+            padding: 6rem;
+            opacity: .30;
+            transition: opacity .8s ease-out;
+            @include swiper-box-shadow;
+            
+            h3 {
+                font-size: 42px;
+                font-weight: 500;
+                text-transform: capitalize;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            i {
+                font-size: 40px;
+                color: $secondary;
+            }
+        }
+    
+        .swiper-slide-visible {
+            opacity: 1;
+        }
+
+        &--button {
+            width: 1190px;
+            height: 100px;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 99;
+            pointer-events: none;
+
+            .btn-wrapper {
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                position: absolute;
+                width: 55px;
+                height: 55px;
+                color: transparent;
+                border: .14rem solid $secondary;
+                border-radius: 50%;
+                transition: .3s all ease-in-out;
+                pointer-events: visible;
+        
+                i {
+                    display: block;
+                    font-size: 20px;
+                    color: $secondary;
+                    position: absolute;
+                }   
+            }
+    
+            .swiper-button-next:hover,
+            .swiper-button-prev:hover {
+                transform: scale(.8);
+            }
+        }
+    }
+}

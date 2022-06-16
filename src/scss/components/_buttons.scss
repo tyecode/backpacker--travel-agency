@@ -1,0 +1,62 @@
+.hero-btn {
+    display: flex;
+    align-items: center;
+    
+    .btn {
+        display: flex;
+        align-items: center;
+        margin: .7rem;
+        cursor: pointer;
+        position: relative;
+        
+        span {
+            color: $white;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-right: .5rem;
+        }
+
+        .btn-circle {
+            width: 30px;
+            height: 30px;
+            border: 1px solid $white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                display: inline-block;
+                color: $white;
+                margin-left: 2px;
+            }
+        }
+    }
+}
+
+.return-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 6rem;
+    right: 4rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: $secondary;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+    z-index: 99;
+
+    i {
+        color: $white;
+        margin-left: 1px;
+    }
+}
+
+.return-top-btn:hover {
+    transform: scale(.85);
+}

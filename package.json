@@ -1,0 +1,28 @@
+{
+  "name": "web-project-template",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "preview": "vite preview",
+    "sass": "sass --watch src/scss:src",
+    "prefix": "postcss src/style.css --use=autoprefixer --map=false --output=src/style.css",
+    "clean": "cleancss -o src/style.min.css src/style.css",
+    "dev": "vite",
+    "build": "npm run prefix && vite build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "clean-css-cli": "^5.6.0",
+    "mixitup": "^3.3.1",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.51.0",
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "font-awesome": "^4.7.0",
+    "parcel-bundler": "^1.3.1",
+    "swiper": "^8.2.2"
+  }
+}
