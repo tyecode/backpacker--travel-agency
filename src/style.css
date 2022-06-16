@@ -11,7 +11,10 @@
   color: #333;
   font-family: "Prompt", sans-serif;
   letter-spacing: 0.15rem;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 html {
@@ -119,7 +122,16 @@ img {
   position: relative;
 }
 .hero-btn .btn:hover .btn-circle {
-  animation: btn-up-down 0.5s alternate infinite;
+  -webkit-animation: btn-up-down 0.5s alternate infinite;
+          animation: btn-up-down 0.5s alternate infinite;
+}
+@-webkit-keyframes btn-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-6px);
+  }
 }
 @keyframes btn-up-down {
   0% {
@@ -131,6 +143,8 @@ img {
 }
 
 .nav-list li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: relative;
   padding: 0.1rem 0;
@@ -154,6 +168,8 @@ img {
 }
 
 .content-link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: relative;
 }
@@ -309,7 +325,6 @@ img {
   align-items: center;
   z-index: 99;
   transition: 0.3s all ease-in-out;
-  -webkit-box-shadow: 0px 0px 45px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 45px 10px rgba(0, 0, 0, 0.1);
 }
 .navbar nav {
@@ -346,7 +361,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .footer--content {
@@ -409,7 +423,6 @@ img {
   padding: 6rem;
   opacity: 0.3;
   transition: opacity 0.8s ease-out;
-  -webkit-box-shadow: 0px 0px 45px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 45px 10px rgba(0, 0, 0, 0.1);
 }
 .why-choose-us .swiper .swiper-slide h3 {
@@ -684,7 +697,8 @@ img {
 .about-content--img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about-content .col-5:first-child {
   margin-left: 0;
@@ -789,7 +803,8 @@ img {
 .work-with-us--img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .work-with-us--link {
   margin-bottom: 1rem;
@@ -863,7 +878,6 @@ img {
   margin: 4rem 0;
   background-color: #fff;
   padding: 4rem;
-  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .contact-content--form input[type=text], .contact-content--form textarea {
@@ -1005,11 +1019,9 @@ img {
   overflow: hidden;
   transition: 0.5s all ease-in-out;
   cursor: pointer;
-  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .experience .recent-trips-box:hover {
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .experience .recent-trips-box:hover .recent-trips-info--title {
@@ -1032,7 +1044,8 @@ img {
 .experience .recent-trips-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: 0.5s all ease-in-out;
 }
 .experience .recent-trips-info {
@@ -1086,7 +1099,8 @@ img {
 .experience .speak-to-us .col-5:first-child .img--backward img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .experience .speak-to-us .col-5:first-child .img--foreward {
   position: absolute;
@@ -1102,7 +1116,8 @@ img {
 .experience .speak-to-us .col-5:first-child .img--foreward img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .experience .speak-to-us .col-5:last-child {
   margin-left: 0;
@@ -1208,7 +1223,6 @@ img {
   cursor: pointer;
   margin: 1rem;
   transition: 0.5s all ease-in-out;
-  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .destinations-packages .packages-wrapper .package-box .package-img {
@@ -1224,7 +1238,8 @@ img {
 .destinations-packages .packages-wrapper .package-box .package-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: 0.5s all ease-in-out;
 }
 .destinations-packages .packages-wrapper .package-box .package-price {
@@ -1298,7 +1313,6 @@ img {
   margin-right: 0.5rem;
 }
 .destinations-packages .packages-wrapper .package-box:hover {
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .destinations-packages .packages-wrapper .package-box:hover .package-img img {

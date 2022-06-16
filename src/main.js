@@ -29,28 +29,30 @@ function carousel() {
 
 //#################################################################################//
 
-// Navbar Animated
+window.addEventListener('load', () => {
+    // Navbar Animated
 
-window.addEventListener('scroll', () => {
-    if(window.pageYOffset > 100) {
-        navbar.style.height = '60px'
-    } else {
-        navbar.style.height = '100px'
-    }
+    window.addEventListener('scroll', () => {
+        if(window.pageYOffset > 100) {
+            navbar.style.height = '60px'
+        } else {
+            navbar.style.height = '100px'
+        }
+    })
+
+    // Scroll back to top
+
+    window.addEventListener('scroll', () => {
+        if(window.pageYOffset > 600) {
+            returnTopBtn.style.display = 'block'
+        } else {
+            returnTopBtn.style.display = 'none'
+        }
+    })
+
+    returnTopBtn.addEventListener('click', () => {
+        window.scrollTo(0, 0)
+    })
+
+    carousel();
 })
-
-// Scroll back to top
-
-window.addEventListener('scroll', () => {
-    if(window.pageYOffset > 600) {
-        returnTopBtn.style.display = 'block'
-    } else {
-        returnTopBtn.style.display = 'none'
-    }
-})
-
-returnTopBtn.addEventListener('click', () => {
-    window.scrollTo(0, 0)
-})
-
-carousel();
