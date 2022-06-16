@@ -1,5 +1,4 @@
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
 
 const navbar = document.querySelector('.navbar')
 const returnTopBtn = document.querySelector('.return-top-btn')
@@ -26,12 +25,6 @@ function carousel() {
         longSwipes: true,
         longSwipesMs: 200,
     })
-
-    swiper.on('slideChange', () => {
-        swiper.update()
-        swiper.updateProgress()
-        swiper.updateSize()
-    });
 }
 
 //#################################################################################//
