@@ -5,6 +5,14 @@
     text-transform: capitalize;
     margin: 0 0 1rem 0;
     letter-spacing: 0;
+
+    @media screen and (max-width: 980px) {
+        font-size: 5rem;
+    }
+
+    @media screen and (max-width: 560px) {
+        font-size: 4rem;
+    }
 }
 
 .display-2 {
@@ -23,6 +31,18 @@
     text-transform: capitalize;
     letter-spacing: 0;
     text-align: center;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 3rem;
+    }
+
+    @media screen and (max-width: 720px) {
+        font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 540px) {
+        font-size: 2rem;
+    }
 }
 
 .content-info {
@@ -32,6 +52,14 @@
     letter-spacing: 0;
     margin: 2rem 0;
     line-height: 1.8;
+
+    @media screen and (max-width: 720px) {
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 540px) {
+        font-size: 16px;
+    }
 }
 
 .content-link {
@@ -43,6 +71,10 @@
         font-weight: 600;
         text-transform: uppercase;
         margin: 1rem 0;
+
+        @media screen and (max-width: 720px) {
+            font-size: 10px;
+        }
     }
 }
 

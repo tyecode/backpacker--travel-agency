@@ -12,35 +12,67 @@
         width: 70%;
         height: auto;
         background-color: transparent;
-        padding: 0 0 3rem 0;
         overflow: hidden;
         text-align: center;
+
+        @media screen and (max-width: 1320px) {
+            width: 80%;
+        }
+
+        @media screen and (max-width: 860px) {
+            width: 90%;
+        }
 
         .swiper-wrapper {
             display: flex;
             align-items: center;
             width: 900px;
-        }
+
+            @media screen and (max-width: 1080px) {
+                width: 90%;
+            }
         
         .swiper-slide {
             display: flex;
             justify-content: center;
             flex-direction: column;
             background: transparent;
-            padding: 3rem;
+            padding: 2rem 3rem;
+
+            @media screen and (max-width: 1320px) {
+                width: 100%;
+                padding: 0;
+            }
+
+            @media screen and (max-width: 860px) {
+                padding: 0;
+            }
+        }
 
             h3 {
                 font-size: 30px;
                 font-weight: 500;
+                margin: 0;
+
+                @media screen and (max-width: 720px) {
+                    font-size: 26px;
+                }
             }
 
             p {
                 margin: 1rem;
+
+                @media screen and (max-width: 720px) {
+                    font-size: 16px;
+                }
             }
 
-            .fa-quote-left,
-            .fa-quote-right {
+            i {
                 font-size: 34px;
+
+                @media screen and (max-width: 1080px) {
+                    font-size: 28px;
+                }
             }
 
             .fa-quote-left {
@@ -63,12 +95,15 @@
         &--button {
             width: 150px;
             height: 100px;
-            position: absolute;
-            bottom: 0;
+            position: relative;
             left: 50%;
             transform: translateX(-50%);
             z-index: 99;
             pointer-events: none;
+
+            @media screen and (max-width: 720px) {
+                width: 130px;
+            }
 
             .btn-wrapper {
                 width: 100%;
@@ -86,6 +121,11 @@
                 border-radius: 50%;
                 transition: .3s all ease-in-out;
                 pointer-events: visible;
+
+                @media screen and (max-width: 720px) {
+                    width: 45px;
+                    height: 45px;
+                }
         
                 i {
                     display: block;

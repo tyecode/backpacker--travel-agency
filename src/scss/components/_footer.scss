@@ -10,14 +10,27 @@
     align-items: center;
     @include box-shadow;
 
+    @media screen and (max-width: 720px) {
+        height: 130px;
+    }
+
+
     &--content {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
+        @media screen and (max-width: 720px) {
+            flex-direction: column-reverse;
+        }
+
         .copyright {
             font-size: 12px;
             font-weight: 300;
+
+            @media screen and (max-width: 720px) {
+                font-size: 10px;
+            }
     
             span {
                 color: $secondary;
@@ -39,6 +52,12 @@
                 cursor: pointer;
                 transition: .3s all ease-in-out;
                 opacity: .9;
+
+                @media screen and (max-width: 720px) {
+                    margin-bottom: 1.5rem;
+                    font-size: 22px;
+                }
+        
             }
 
             i:hover {

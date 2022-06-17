@@ -44,6 +44,11 @@
             transform: scaleX(1);
             transform-origin: left;
         }
+
+        .active::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
     }
 }
 
@@ -68,5 +73,33 @@
     a:hover::after {
         transform: scaleX(0);
         transform-origin: right;
-    }   
+    }
+}
+
+.fadeIn {
+    animation: fade-in .4s linear 1 forwards;
+}
+
+@keyframes fade-in {
+    0% { 
+        opacity: 0; 
+    }
+    
+    100% { 
+        opacity: 1; 
+    }
+}
+
+.fadeOut {
+    animation: fade-out .4s linear 1 forwards;
+}
+
+@keyframes fade-out {
+    0% { 
+        opacity: 1; 
+    }
+    
+    100% { 
+        opacity: 0; 
+    }
 }

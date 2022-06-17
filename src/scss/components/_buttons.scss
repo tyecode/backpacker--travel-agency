@@ -51,6 +51,10 @@
     transition: .3s all ease-in-out;
     z-index: 99;
 
+    @media screen and (max-width: 1320px) {
+        display: none !important;
+    }
+
     i {
         color: $white;
         margin-left: 1px;
