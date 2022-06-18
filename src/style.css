@@ -329,13 +329,13 @@ img {
 }
 @media screen and (max-width: 560px) {
   .display-2 {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 .content-header {
   font-family: "Cormorant Garamond", serif;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 600;
   color: #613842;
   margin: 2.5rem 0;
@@ -356,7 +356,7 @@ img {
 
 .content-info {
   font-family: "Cormorant Garamond", serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 200;
   letter-spacing: 0;
   margin: 2rem 0;
@@ -364,7 +364,7 @@ img {
 }
 @media screen and (max-width: 720px) {
   .content-info {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -380,7 +380,7 @@ img {
 }
 @media screen and (max-width: 720px) {
   .content-link a {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -429,7 +429,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .navbar nav .logo {
-    font-size: 24px;
+    font-size: 25px;
   }
 }
 .navbar nav .nav-list {
@@ -487,8 +487,8 @@ img {
 }
 @media screen and (max-width: 480px) {
   .navbar nav .hamburger svg {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
   }
 }
 .navbar nav .hamburger button {
@@ -566,7 +566,7 @@ img {
 }
 @media screen and (max-width: 720px) {
   .footer--content .copyright {
-    font-size: 10px;
+    font-size: 11px;
     text-align: center;
   }
 }
@@ -579,9 +579,9 @@ img {
   color: #613842;
 }
 .footer--content .social-media i {
-  font-size: 24px;
+  font-size: 30px;
   color: #333;
-  margin: 0 0.3rem;
+  margin: 0 0.2rem;
   cursor: pointer;
   transition: 0.3s all ease-in-out;
   opacity: 0.9;
@@ -589,7 +589,7 @@ img {
 @media screen and (max-width: 720px) {
   .footer--content .social-media i {
     margin-bottom: 1.5rem;
-    font-size: 22px;
+    font-size: 30px;
   }
 }
 .footer--content .social-media i:hover {
@@ -921,18 +921,26 @@ img {
 }
 .home .home-hero--video {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: -1;
 }
+.home .home-hero--video video {
+  display: block;
+}
 @media (min-aspect-ratio: 16/9) {
-  .home .home-hero--video {
+  .home .home-hero--video video {
     width: 100%;
     height: auto;
   }
 }
 @media (max-aspect-ratio: 16/9) {
-  .home .home-hero--video {
+  .home .home-hero--video video {
     width: auto;
     height: 100%;
   }
@@ -1074,7 +1082,6 @@ img {
 }
 @media screen and (max-width: 1200px) {
   .about-content .col-5:last-child {
-    margin: 0;
     width: 80%;
   }
 }

@@ -39,13 +39,13 @@
     }
 
     @media screen and (max-width: 560px) {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
 .content-header {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 600;
     color: $secondary;
     margin: 2.5rem 0;
@@ -68,14 +68,14 @@
 
 .content-info {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 200;
     letter-spacing: 0;
     margin: 2rem 0;
     line-height: 1.8;
 
     @media screen and (max-width: 720px) {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     // @media screen and (max-width: 540px) {
@@ -94,7 +94,7 @@
         margin: 1rem 0;
 
         @media screen and (max-width: 720px) {
-            font-size: 10px;
+            font-size: 12px;
         }
     }
 }

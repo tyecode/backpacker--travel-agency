@@ -29,7 +29,7 @@
             font-weight: 300;
 
             @media screen and (max-width: 720px) {
-                font-size: 10px;
+                font-size: 11px;
                 text-align: center;
             }
     
@@ -47,16 +47,16 @@
         .social-media {
             
             i {
-                font-size: 24px;
+                font-size: 30px;
                 color: $black;
-                margin: 0 .3rem;
+                margin: 0 .2rem;
                 cursor: pointer;
                 transition: .3s all ease-in-out;
                 opacity: .9;
 
                 @media screen and (max-width: 720px) {
                     margin-bottom: 1.5rem;
-                    font-size: 22px;
+                    font-size: 30px;
                 }
         
             }

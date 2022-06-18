@@ -11,19 +11,29 @@
     
         &--video {
             position: absolute;
-            bottom: 0;
-            right: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             z-index: -1;
+            
 
-            @media (min-aspect-ratio: 16/9) {
-                width: 100%;
-                height: auto;
-            }
-              
-            @media (max-aspect-ratio: 16/9) {
-                width: auto;
-                height: 100%;
-            }
+           video {
+                display: block;
+
+                @media (min-aspect-ratio: 16/9) {
+                    width: 100%;
+                    height: auto;
+                }
+                
+                @media (max-aspect-ratio: 16/9) {
+                    width: auto;
+                    height: 100%;
+                }
+           }
         }
 
         &--overlay {
