@@ -1376,11 +1376,26 @@ img {
   padding: 4rem 0;
 }
 .contact-content--form {
-  margin: 4rem 0;
+  margin: 4rem 0 0 0;
   background-color: #fff;
   padding: 4rem;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+@media screen and (max-width: 560px) {
+  .contact-content--form {
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .contact-content--form {
+    padding: 2rem;
+  }
+}
+.contact-content--form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contact-content--form input[type=text], .contact-content--form textarea {
   width: 100%;
@@ -1405,20 +1420,72 @@ img {
   cursor: pointer;
   margin-top: 0.4rem;
 }
+@media screen and (max-width: 960px) {
+  .contact-content--form input[type=submit] {
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 320px) {
+  .contact-content--form input[type=submit] {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .contact-content .row {
   align-items: center;
 }
+@media screen and (max-width: 960px) {
+  .contact-content .row {
+    flex-direction: column;
+  }
+}
 .contact-content .col-4 {
   margin-left: 0;
+}
+@media screen and (max-width: 960px) {
+  .contact-content .col-4 {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
 }
 .contact-content .col-4 .content-info {
   width: 100%;
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 960px) {
+  .contact-content .col-4 .content-info {
+    margin: 1rem 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .contact-content .col-4 .content-info {
+    flex-direction: column;
+  }
+}
 .contact-content .col-4 .content-info i {
   font-size: 40px;
-  margin-right: 1rem;
+  width: 70px;
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .contact-content .col-4 .content-info i {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .contact-content .col-4 .content-info i {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .contact-content .col-4 .content-info i {
+    margin-bottom: 0.5rem;
+  }
 }
 .contact-content .col-4 .content-info h3 {
   font-family: "Prompt", sans-serif;
@@ -1426,18 +1493,56 @@ img {
   font-weight: 500;
   letter-spacing: 0;
 }
+@media screen and (max-width: 1200px) {
+  .contact-content .col-4 .content-info h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .contact-content .col-4 .content-info h3 {
+    font-size: 18px;
+  }
+}
 .contact-content .col-4 .content-info p {
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 0;
   opacity: 0.7;
 }
-.contact-content .col-4 .content-info .fa-mobile-button {
-  margin-left: 0.4rem;
-  margin-right: 1.4rem;
+@media screen and (max-width: 1200px) {
+  .contact-content .col-4 .content-info p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .contact-content .col-4 .content-info p {
+    font-size: 14px;
+  }
 }
 .contact-content .col-6 {
   margin-right: 0;
+}
+@media screen and (max-width: 960px) {
+  .contact-content .col-6 {
+    margin: 0;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 840px) {
+  .contact-content .col-6 {
+    margin: 0;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .contact-content .col-6 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .contact-content .col-6 {
+    width: 100%;
+  }
 }
 
 .experience {
@@ -1809,8 +1914,26 @@ img {
   width: 100%;
   padding: 4rem 0;
 }
+@media screen and (max-width: 840px) {
+  .destinations-content .content-header {
+    padding: 0 1rem;
+  }
+}
 .destinations-content .content-info {
   padding: 0 8rem;
+}
+.destinations-content .content-info {
+  padding: 0 8rem;
+}
+@media screen and (max-width: 980px) {
+  .destinations-content .content-info {
+    padding: 0 5rem;
+  }
+}
+@media screen and (max-width: 840px) {
+  .destinations-content .content-info {
+    padding: 0 1rem;
+  }
 }
 .destinations-packages {
   width: 100%;
@@ -1833,8 +1956,11 @@ img {
   cursor: pointer;
   margin: 1rem;
   transition: 0.5s all ease-in-out;
+  overflow: hidden;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .destinations-packages .packages-wrapper .package-box .package-img {
   width: 100%;
@@ -1845,6 +1971,11 @@ img {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+@media screen and (max-width: 375px) {
+  .destinations-packages .packages-wrapper .package-box .package-img {
+    height: 180px;
+  }
 }
 .destinations-packages .packages-wrapper .package-box .package-img img {
   width: 100%;
@@ -1875,6 +2006,9 @@ img {
   color: #333;
   transition: 0.5s all ease-in-out;
   text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .destinations-packages .packages-wrapper .package-box .package-info--country {
   font-size: 14px;
@@ -1882,6 +2016,9 @@ img {
   margin: 0.5rem 0;
   opacity: 0.8;
   text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .destinations-packages .packages-wrapper .package-box .package-info--rate-time {
   width: 100%;
@@ -1890,6 +2027,12 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (max-width: 375px) {
+  .destinations-packages .packages-wrapper .package-box .package-info--rate-time {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .destinations-packages .packages-wrapper .package-box .package-info--rate-time .rate-review {
   display: flex;
@@ -1931,6 +2074,17 @@ img {
 }
 .destinations-packages .packages-wrapper .package-box:hover .package-info--location {
   color: #ff6347;
+}
+@media screen and (max-width: 1432px) {
+  .destinations-packages .packages-wrapper .package-9 {
+    display: none;
+  }
+}
+@media screen and (max-width: 849px) {
+  .destinations-packages .packages-wrapper .package-7,
+.destinations-packages .packages-wrapper .package-8 {
+    display: none;
+  }
 }
 .destinations-packages--view-more-btn {
   width: 100%;

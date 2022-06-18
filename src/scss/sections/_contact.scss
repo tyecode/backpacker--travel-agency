@@ -49,10 +49,24 @@
         padding: 4rem 0;
 
         &--form {
-            margin: 4rem 0;
+            margin: 4rem 0 0 0;
             background-color: $white;
             padding: 4rem;
             @include box-shadow;
+
+            @media screen and (max-width: 560px) {
+                padding: 3rem;
+            }
+
+            @media screen and (max-width: 460px) {
+                padding: 2rem;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
             input[type=text], textarea {
                 width: 100%;
@@ -77,24 +91,67 @@
                 text-transform: uppercase;
                 cursor: pointer;
                 margin-top: .4rem;
+
+                @media screen and (max-width: 960px) {
+                    width: fit-content;
+                }
+
+                @media screen and (max-width: 320px) {
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
             }
         }
         
         .row {
             align-items: center;
+
+            @media screen and (max-width: 960px) {
+                flex-direction: column;
+            }
         }
 
         .col-4 {
             margin-left: 0;
+
+            @media screen and (max-width: 960px) {
+                width: fit-content;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+            }
             
             .content-info {
                 width: 100%;
                 display: flex;
                 align-items: center;
 
+                @media screen and (max-width: 960px) {
+                    margin: 1rem 0;
+                }
+
+                @media screen and (max-width: 320px) {
+                    flex-direction: column;
+                }
+
                 i {
                     font-size: 40px;
-                    margin-right: 1rem;
+                    width: 70px;
+                    text-align: center;
+
+                    @media screen and (max-width: 1200px) {
+                        font-size: 36px;  
+                    }
+
+                    @media screen and (max-width: 640px) {
+                        font-size: 32px;
+                    }
+
+                    @media screen and (max-width: 320px) {
+                        margin-bottom: .5rem;                    
+                    }
                 }
 
                 h3 {
@@ -102,6 +159,14 @@
                     font-size: 22px;
                     font-weight: 500;
                     letter-spacing: 0;
+
+                    @media screen and (max-width: 1200px) {
+                        font-size: 20px;
+                    }
+
+                    @media screen and (max-width: 640px) {
+                        font-size: 18px;
+                    }
                 }
 
                 p {
@@ -109,17 +174,38 @@
                     font-weight: 300;
                     letter-spacing: 0;
                     opacity: .7;
-                }
 
-                .fa-mobile-button {
-                    margin-left: .4rem;
-                    margin-right: 1.4rem;
+                    @media screen and (max-width: 1200px) {
+                        font-size: 16px;
+                    }
+
+                    @media screen and (max-width: 640px) {
+                        font-size: 14px;
+                    }
                 }
             }
         }
 
         .col-6 {
             margin-right: 0;
+
+            @media screen and (max-width: 960px) {
+                margin: 0;
+                width: 70%;
+            }
+
+            @media screen and (max-width: 840px) {
+                margin: 0;
+                width: 80%;
+            }
+
+            @media screen and (max-width: 720px) {
+                width: 90%;
+            }
+
+            @media screen and (max-width: 560px) {
+                width: 100%;
+            }
         }
     }
     
