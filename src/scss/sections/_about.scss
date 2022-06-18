@@ -38,18 +38,6 @@
                 width: 100%;
                 align-items: center;
             }
-            
-            .display-1 {
-                color: $white;
-                display: block;
-            }
-
-            .display-2 {
-                display: block;
-                color: $white;
-                font-size: 30px;
-                font-weight: 300;
-            }
         }
     }
 
@@ -81,7 +69,7 @@
             @media screen and (max-width: 1200px) {
                 padding-top: 3rem;
                 width: 450px;
-                height: fit-content;
+                height: auto;
                 margin-bottom: 3rem;
 
                 @media screen and (max-width: 860px) {
@@ -318,7 +306,7 @@
 
         @media screen and (max-width: 1180px) {
             width: 100%;
-            height: fit-content;
+            height: auto;
         }
 
         @media screen and (max-width: 920px) {

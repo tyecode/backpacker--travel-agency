@@ -1,6 +1,10 @@
 .hero-btn {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 720px) {
+        display: none;
+    }
     
     .btn {
         display: flex;

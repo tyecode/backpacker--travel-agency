@@ -3,6 +3,7 @@
     font-size: 6rem;
     font-weight: 600;
     text-transform: capitalize;
+    color: $white;
     margin: 0 0 1rem 0;
     letter-spacing: 0;
 
@@ -10,16 +11,36 @@
         font-size: 5rem;
     }
 
-    @media screen and (max-width: 560px) {
+    @media screen and (max-width: 720px) {
         font-size: 4rem;
+    }
+
+    @media screen and (max-width: 560px) {
+        font-size: 3rem;
+        text-align: center;
     }
 }
 
 .display-2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 14;
+    font-size: 28px;
+    font-weight: 300;
     text-transform: capitalize;
+    color: $white;
     margin: 2rem .3rem;
+
+    @media screen and (max-width: 980px) {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 720px) {
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 560px) {
+        font-size: 16px;
+    }
 }
 
 .content-header {
@@ -40,9 +61,9 @@
         font-size: 2.5rem;
     }
 
-    @media screen and (max-width: 540px) {
-        font-size: 2rem;
-    }
+    // @media screen and (max-width: 540px) {
+    //     font-size: 2rem;
+    // }
 }
 
 .content-info {
@@ -57,9 +78,9 @@
         font-size: 18px;
     }
 
-    @media screen and (max-width: 540px) {
-        font-size: 16px;
-    }
+    // @media screen and (max-width: 540px) {
+    //     font-size: 16px;
+    // }
 }
 
 .content-link {

@@ -36,16 +36,9 @@
             justify-content: center;
             align-items: flex-start;
             
-            .display-1 {
-                color: $white;
-                display: block;
-            }
-
-            .display-2 {
-                display: block;
-                color: $white;
-                font-size: 30px;
-                font-weight: 200;
+            @media screen and (max-width: 980px) {
+                width: 100%;
+                align-items: center;
             }
         }
     }
@@ -153,14 +146,18 @@
 
     .speak-to-us {
         width: 100%;
-        padding: 6rem 0 15rem 0;
+        padding: 6rem 0 12rem 0;
         background-color: $background-2;
+
+        .row {
+            align-items: flex-start;
+        }
     
         .col-5:first-child {
             margin-right: 0;
             position: relative;
 
-            .img {
+            .img  {
                 width: 100%;
                 display: block;
 
@@ -170,10 +167,6 @@
                     right: 5rem;
                     width: 450px;
                     height: 450px;
-                    background-color: gray;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
 
                     img {
                         width: 100%;
@@ -188,10 +181,6 @@
                     right: 0;
                     width: 320px;
                     height: 320px;
-                    background-color: $gray;
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
 
                     img {
                         width: 100%;
@@ -205,6 +194,8 @@
         .col-5:last-child {
             margin-left: 0;
             padding-top: 1.5rem;
+            justify-content: flex-start !important;
+            align-items: flex-start !important;
     
             .content-header {
                 text-align: start;

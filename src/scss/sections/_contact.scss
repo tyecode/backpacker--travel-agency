@@ -35,17 +35,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            
-            .display-1 {
-                color: $white;
-                display: block;
-            }
 
-            .display-2 {
-                display: block;
-                color: $white;
-                font-size: 30px;
-                font-weight: 200;
+            @media screen and (max-width: 980px) {
+                width: 100%;
+                align-items: center;
             }
         }
     }
