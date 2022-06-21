@@ -30,6 +30,7 @@ html {
     scroll-behavior: smooth;
     background-color: $white;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {

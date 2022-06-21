@@ -5,6 +5,13 @@ window.onload = function() {
     const returnTopBtn = document.querySelector('.return-top-btn')
     const hamburger = document.querySelector('#hamburger')
     const navList = document.querySelector('.nav-list')
+    const loader = document.querySelector('.loader-bg')
+
+    // Preloader
+
+    setTimeout(() => {
+        loader.style.display = "none"
+    }, 500)
 
     // Navbar Animated
 
