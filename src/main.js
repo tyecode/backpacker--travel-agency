@@ -11,7 +11,7 @@ window.onload = function() {
 
     setTimeout(() => {
         loader.style.display = "none"
-    }, 500)
+    }, 1000)
 
     // Navbar Animated
 
@@ -37,6 +37,8 @@ window.onload = function() {
         window.scrollTo(0, 0)
     })
 
+    // Hamburger menu
+
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('opened')
 
@@ -53,8 +55,12 @@ window.onload = function() {
         }
     })
 
+    // Using carousel
+
     carousel();
 }
+
+// Swiper API
 
 function carousel() {
     var swiper = new Swiper(".mySwiper", {

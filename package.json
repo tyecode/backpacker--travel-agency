@@ -1,7 +1,7 @@
 {
   "name": "backpacker--travel-agency",
   "private": true,
-  "version": "1.1.2",
+  "version": "1.1.3",
   "scripts": {
     "preview": "vite preview",
     "sass": "sass --watch src/scss:src",
